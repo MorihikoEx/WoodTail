@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Hello from './components/Hello.vue'
 
 </script>
 
@@ -8,8 +8,11 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/WoodTail_128.svg" class="logo WoodTail" alt="WoodTail logo" />
     </a>
+    <a href="https://thebook.常之书.site/" target="_blank">
+      <img src="./assets/TheBook_128.svg" class="logo TheBook" alt="TheBook logo" />
+    </a>
   </div>
-  <HelloWorld msg="欢迎来到木尾维修的杂物间" />
+  <Hello msg="欢迎来到木尾维修的杂物间" />
 </template>
 
 <style scoped>
@@ -21,6 +24,9 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 
 .logo.WoodTail:hover {
-  filter: drop-shadow(0 0 2em #779cab);
+  filter: drop-shadow(0 0 3em #32de8a);
+}
+.logo.TheBook:hover {
+  filter: drop-shadow(0 0 3em #ff9f1c);
 }
 </style>

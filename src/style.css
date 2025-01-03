@@ -14,7 +14,6 @@
 }
 
 a {
-  font-weight: 500;
   color: #779cab;
   text-decoration: inherit;
 }
@@ -50,26 +49,31 @@ button:hover {
   border-color: #a2e8dd;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 3px auto -webkit-focus-ring-color;
-}
 
 .card {
   padding: 2em;
 }
-.lightcolor{
+
+.color_a{
   color: #a2e8dd;
 }
-.stronglightcolor{
+.color_a_strong{
   color: #32de8a;
 }
-.darkcolor{
-  color: #779cab;
-}
-.strongdarkcolor{
+.color_b{
   color: #35524a;
 }
+.color_middle{
+  color: #779cab;
+}
+.card_background{
+  background-color: #1c1c1c;
+}
+
+.rounded{
+  border-radius: 8px;
+}
+
 
 #app {
   max-width: 1280px;
@@ -81,12 +85,17 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #f1f1f1;
   }
   a:hover {
     color: #32de8a;
   }
   button {
     background-color: #f9f9f9;
+  }
+
+
+  .card_background{
+background-color: #ffffff;
   }
 }

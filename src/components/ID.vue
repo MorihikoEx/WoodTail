@@ -8,7 +8,7 @@ let tel = ref('13812345678');
 let _name = ref(true);
 let _tel = ref(true);
 
-function changename() {
+function ChangeName() {
   if(_name.value){
     name.value = '苍离';
   }else{
@@ -17,10 +17,10 @@ function changename() {
   _name.value = !_name.value;
 
 }
-function changeage() {
+function ChangeAge() {
   age.value += 1;
 }
-function changetel() {
+function ChangeTel() {
   if(_tel.value){
     tel.value = '114514';
   }else{
@@ -34,12 +34,12 @@ function changetel() {
 
 <template>
   <div class="Person">
-    <h3>身份id：{{ name }} &nbsp;&nbsp;年龄：({{ age }})</h3>
+    <h2>身份id：{{ name }} &nbsp;&nbsp;年龄：({{ age }})</h2>
     <p>联系方式: {{ tel }}</p>
 
-    <button @click="changename" class="my-button">切换真名</button>
-    <button @click="changeage" class="my-button">臭狗给我变老</button>
-    <button @click="changetel" class="my-button">好臭的联系方式</button>
+    <button @click="ChangeName" class="my-button">切换真名</button>
+    <button @click="ChangeAge" class="my-button">臭狗给我变老</button>
+    <button @click="ChangeTel" class="my-button">好臭的联系方式</button>
 
 
 
