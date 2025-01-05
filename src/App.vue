@@ -6,10 +6,10 @@ import Hello from './components/Hello.vue'
 <template>
   <div>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/WoodTail_128.svg" class="logo WoodTail" alt="WoodTail logo" />
+      <img src="./assets/WoodTail_256.svg" class="logo WoodTail" alt="WoodTail logo" />
     </a>
     <a href="https://thebook.常之书.site/" target="_blank">
-      <img src="./assets/TheBook_128.svg" class="logo TheBook" alt="TheBook logo" />
+      <img src="/assets/TheBook_256.svg" class="logo TheBook" alt="TheBook logo" />
     </a>
   </div>
   <Hello msg="欢迎来到木尾维修的杂物间" />
