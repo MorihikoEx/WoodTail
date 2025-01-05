@@ -8699,7 +8699,7 @@ textarea.form-control-lg {
   pointer-events: auto !important;
 }
 
-.rounded {
+.radius {
   border-radius: var(--bs-border-radius) !important;
 }
 
