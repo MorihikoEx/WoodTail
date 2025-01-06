@@ -26,7 +26,7 @@ const stopIncrement = () => {
   </div>
   <div class="card">
     <h2>加载动画</h2>
-    <loading />
+    <loading/>
   </div>
 </template>
 
