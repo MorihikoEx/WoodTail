@@ -15,7 +15,9 @@ import CyberWoodenFish from "./components/alternate/CyberWoodenFish.vue";
       <img src="./assets/TheBook_256.svg" class="logo TheBook" alt="TheBook logo" />
     </a>
   </div>
+  <div class="box">
   <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
+  </div>
   <div class="card">
     <cyber-wooden-fish/>
   </div>
