@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import Hello from './components/Hello.vue'
+import ThemeSwitch from "./components/main/ThemeSwitch.vue";
 
 </script>
 
 <template>
+  <ThemeSwitch/>
   <div>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/WoodTail_256.svg" class="logo WoodTail" alt="WoodTail logo" />
