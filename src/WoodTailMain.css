@@ -47,8 +47,8 @@
   --wt-link-color: var(--wt-color-a1);
   --wt-link-hover-color: var(--wt-color-a2);
 
-  --wt-loading-color1: var(--wt-color-a2);
-  --wt-loading-color2: var(--wt-color-a2);
+  --wt-loading-color1: var(--wt-gray-700);
+  --wt-loading-color2: var(--wt-color-a1);
 
   --wt-code-color: #d63384;
   --wt-code-bg: var(--wt-gray-200);

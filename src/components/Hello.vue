@@ -26,16 +26,10 @@ const stopIncrement = () => {
   </div>
   <div class="card">
     <h2>加载动画</h2>
-    <loading/>
+    <loading />
   </div>
 </template>
 
 <style scoped>
-button{
-  transition: background-color 2s;
-}
-.skin_a:active {
-  background-color: #32de8a;
-}
 
 </style>
