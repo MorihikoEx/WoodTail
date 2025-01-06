@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Hello from './components/Hello.vue'
 import ThemeSwitch from "./components/main/ThemeSwitch.vue";
+import CyberWoodenFish from "./components/alternate/CyberWoodenFish.vue";
 
 </script>
 
@@ -14,7 +15,11 @@ import ThemeSwitch from "./components/main/ThemeSwitch.vue";
       <img src="./assets/TheBook_256.svg" class="logo TheBook" alt="TheBook logo" />
     </a>
   </div>
-  <Hello msg="欢迎来到木尾维修的杂物间" />
+  <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
+  <div class="card">
+    <cyber-wooden-fish/>
+  </div>
+
 </template>
 
 <style scoped>
