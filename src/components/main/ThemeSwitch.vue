@@ -10,10 +10,10 @@ function updateTheme(theme: 'light' | 'dark') {
   const body = document.body;
   if (theme === 'dark') {
     body.setAttribute('data-bs-theme', 'dark');
-    // 你可以在这里添加其他Dark主题的样式
+    // 这里可以添加其他Dark主题的样式
   } else {
     body.setAttribute('data-bs-theme', 'light');
-    // 你可以在这里添加其他Light主题的样式
+    // 这里可以添加其他Light主题的样式
   }
 }
 

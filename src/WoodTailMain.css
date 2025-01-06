@@ -47,6 +47,9 @@
   --wt-link-color: var(--wt-color-a1);
   --wt-link-hover-color: var(--wt-color-a2);
 
+  --wt-loading-color1: var(--wt-color-a2);
+  --wt-loading-color2: var(--wt-color-a2);
+
   --wt-code-color: #d63384;
   --wt-code-bg: var(--wt-gray-200);
 
@@ -97,11 +100,13 @@
   --wt-link-color: var(--wt-color-a1);
   --wt-link-hover-color: var(--wt-color-a2);
 
+  --wt-border: 2px solid var(--wt-color-a1);
+  --wt-border-radius: 8px;
+
   --wt-code-color: #d63384;
   --wt-code-bg: var(--wt-gray-200);
 
-  --wt-border: 2px solid var(--wt-color-a1);
-  --wt-border-radius: 8px;
+
 
 
 }

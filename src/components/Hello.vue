@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import {ref} from 'vue'
+import Loading from "./basic/Loading.vue";
 
 defineProps<{ msg: string }>()
 
@@ -22,6 +23,10 @@ const stopIncrement = () => {
     <h2>组件测试</h2>
     <h3>敲敲这里的赛博木鱼, 或者偷渡去看<a href="https://thebook.常之书.site " target="_blank" >常之书</a></h3>
     <button type="button" class="skin_a" @click="count++" @touchstart="startIncrement" @mousedown="startIncrement" @touchend="stopIncrement" @mouseup="stopIncrement">功德+{{ count }}</button>
+  </div>
+  <div class="card">
+    <h2>加载动画</h2>
+    <loading/>
   </div>
 </template>
 
