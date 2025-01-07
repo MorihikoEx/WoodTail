@@ -39,7 +39,6 @@ import Bottom from "./components/basic/Bottom.vue";
 
   </div>
 
-  <bottom/>
 
 </template>
 
