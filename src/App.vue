@@ -1,41 +1,47 @@
 <script setup lang="ts">
 import Hello from './components/Hello.vue'
-import ThemeSwitch from "./components/main/ThemeSwitch.vue";
+import ThemeSwitch from "./components/basic/ThemeSwitch.vue";
 import CyberWoodenFish from "./components/alternate/CyberWoodenFish.vue";
-
+import Top from "./components/basic/Top.vue";
+import Placeholder from "./components/basic/Placeholder.vue";
 </script>
 
 <template>
   <ThemeSwitch/>
-  <div>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/WoodTail_256.svg" class="logo WoodTail" alt="WoodTail logo" />
-    </a>
-    <a href="https://thebook.常之书.site/" target="_blank">
-      <img src="./assets/TheBook_256.svg" class="logo TheBook" alt="TheBook logo" />
-    </a>
+  <top/>
+  <div class="container my-4">
+    <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
   </div>
-  <div class="box">
-  <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
-  </div>
-  <div class="card">
+
+  <div class="container my-4 py-4 box" >
     <cyber-wooden-fish/>
   </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="box my-4"><placeholder/></div>
+      <div class="box my-4"><placeholder/></div>
+    </div>
+  </div>
+
+  <div class="container shadow my-4">
+    <placeholder/>
+    <placeholder/>
+  </div>
+
+  <div class="container box my-4">
+    <div class="row">
+      <placeholder/>
+      <placeholder/>
+      <placeholder/>
+    </div>
+
+  </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
 
-.logo.WoodTail:hover {
-  filter: drop-shadow(0 0 2.5em #216869);
-}
-.logo.TheBook:hover {
-  filter: drop-shadow(0 0 2.5em #ff9f1c);
-}
+
+
+<style scoped>
+
 </style>
