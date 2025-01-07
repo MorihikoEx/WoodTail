@@ -11,26 +11,26 @@ import Placeholder from "./components/basic/Placeholder.vue";
   <ThemeSwitch/>
   <top/>
   <div class="m-1 p-0 w-820">
-    <div class=" m-4">
+    <div class="box-1 m-4 py-5">
       <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
     </div>
 
-    <div class=" m-4 py-4 shadow" >
+    <div class="box-1 m-4 py-5 shadow" >
       <cyber-wooden-fish/>
     </div>
 
     <div class="m-4 py-5">
-        <placeholder class="shadow my-4" />
-        <placeholder class="shadow"/>
+        <placeholder class="box-1 shadow my-4" />
+        <placeholder class="box-1 shadow"/>
     </div>
 
     <div class="flex">
-      <placeholder class="m-4 shadow" />
-      <placeholder class=" m-4 shadow" />
+      <placeholder class="box-1 m-4 shadow" />
+      <placeholder class="box-1 m-4 shadow" />
     </div>
 
-    <div class="flex box shadow m-4">
-        <placeholder />
+    <div class="flex box-1 shadow m-4">
+      <placeholder />
       <placeholder />
       <placeholder />
     </div>
