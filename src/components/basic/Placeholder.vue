@@ -19,7 +19,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="col m-0 px-0 py-5">
+  <div class="p-5">
     <h1 class="light">{{ containerSize.width }} * {{ containerSize.height }}</h1>
   </div>
 </template>
@@ -27,11 +27,6 @@ onBeforeUnmount(() => {
 <style scoped>
 h1 {
   text-align: center;
-}
-
-.col {
-  width: 100%;
-  height: 100%;
 }
 </style>
 

@@ -29,8 +29,8 @@
 
   --wt-highlight-bg: var(--wt-color-b2);
 
-  --wt-container-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
-);
+  --wt-box-shadow-out: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
+  --wt-box-shadow-in: inset 13px 13px 40px #e9e9e9, inset -13px -13px 40px #fdfdfd;
 
   --wt-emphasis-color: var(--wt-color-a1);
   --wt-secondary-color: var(--wt-color-a2);
@@ -66,7 +66,13 @@
   --wt-body-bg1: #212529;
   --wt-body-bg2: #202020;
 
-  --wt-container-shadow:20px 20px 60px #1d2124, -20px -20px 60px #25292e;
+  --wt-shadow-1: #1d2124;
+  --wt-shadow-2: #25292e;
+  --wt-shadow-3: #e4e4e4;
+  --wt-shadow-4: #ffffff;
+
+  --wt-box-shadow-out:20px 20px 60px #1d2124, -20px -20px 60px #25292e;
+  --wt-box-shadow-in: inset 8px 8px 16px #e4e4e4, inset -8px -8px 16px #ffffff;
 
 
   --wt-emphasis-color: var(--wt-color-a1);
@@ -105,6 +111,7 @@
   -moz-osx-font-smoothing: grayscale;
 
 }
+
 body{
   display: block;
   color: var(--wt-text-color);
@@ -134,20 +141,21 @@ p.light{
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 12px;
   border: none;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
   color: var(--wt-text-color);
   background-color: var(--wt-body-bg2);
   cursor: pointer;
-  transition: border-color 0.3s;
+  transition: background-color 0.3s;
 }
+
 button:hover {
   background-color: var(--wt-color-a1);
 }
+
+
 
 
 
@@ -158,6 +166,7 @@ button:hover {
 .box-1 {
   border-radius: 12px;
   background: var(--wt-body-bg1);
+  flex-grow: 1;
 }
 .box-2 {
   border-radius: 12px;
@@ -165,9 +174,13 @@ button:hover {
 }
 
 
-.shadow {
-  box-shadow: var(--wt-container-shadow);
+.shadow-out {
+  box-shadow: var(--wt-box-shadow-out);
 }
+.shadow-in {
+  box-shadow: var(--wt-box-shadow-in);
+}
+
 
 .radius{
   border-radius: 12px;
@@ -179,6 +192,9 @@ button:hover {
   will-change: filter;
   transition: filter 300ms;
 }
+.logo:hover {
+  filter: drop-shadow(0 0 1.2em var(--wt-body-bg2));
+}
 
 
 #app {
@@ -189,7 +205,17 @@ button:hover {
 
 .flex {
   display: flex;
+  justify-content: space-between;
 }
+
+@media (max-width: 612px) {
+  .flex {
+    flex-direction: column; /* 修改为垂直排列 */
+  }
+}
+
+
+
 
 .m-0 {
   margin: 0;
