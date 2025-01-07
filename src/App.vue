@@ -7,41 +7,47 @@ import Placeholder from "./components/basic/Placeholder.vue";
 </script>
 
 <template>
+
   <ThemeSwitch/>
   <top/>
-  <div class="container my-4">
-    <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
-  </div>
-
-  <div class="container my-4 py-4 box" >
-    <cyber-wooden-fish/>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="box my-4"><placeholder/></div>
-      <div class="box my-4"><placeholder/></div>
+  <div class="m-1 p-0 w-820">
+    <div class=" m-4">
+      <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
     </div>
-  </div>
 
-  <div class="container shadow my-4">
-    <placeholder/>
-    <placeholder/>
-  </div>
+    <div class=" m-4 py-4 shadow" >
+      <cyber-wooden-fish/>
+    </div>
 
-  <div class="container box my-4">
-    <div class="row">
-      <placeholder/>
-      <placeholder/>
-      <placeholder/>
+    <div class="m-4 py-5">
+        <placeholder class="shadow my-4" />
+        <placeholder class="shadow"/>
+    </div>
+
+    <div class="flex">
+      <placeholder class="m-4 shadow" />
+      <placeholder class=" m-4 shadow" />
+    </div>
+
+    <div class="flex box shadow m-4">
+        <placeholder />
+      <placeholder />
+      <placeholder />
     </div>
 
   </div>
+
 </template>
 
 
 
 
 <style scoped>
+.w-820{
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 </style>
