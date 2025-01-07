@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <header class="header">
-      <h4>WoodTail</h4>
+  <header class="header" >
+      <h4 >WoodTail</h4>
   </header>
 </template>
 
@@ -14,7 +14,9 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+
 h4{
+  font-weight: bold;
   margin: 0;
   padding: 0;
   text-align: center;
