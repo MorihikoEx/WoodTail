@@ -66,13 +66,13 @@
   --wt-body-bg1: #212529;
   --wt-body-bg2: #202020;
 
-  --wt-shadow-1: #1d2124;
-  --wt-shadow-2: #25292e;
-  --wt-shadow-3: #e4e4e4;
-  --wt-shadow-4: #ffffff;
+  --wt-shadow-1: #1c1f23;
+  --wt-shadow-2: #262b2f;
+  --wt-shadow-3: #1c2023;
+  --wt-shadow-4: #262a2f;
 
-  --wt-box-shadow-out:20px 20px 60px #1d2124, -20px -20px 60px #25292e;
-  --wt-box-shadow-in: inset 8px 8px 16px #e4e4e4, inset -8px -8px 16px #ffffff;
+  --wt-box-shadow-out:20px 20px 60px #1c1f23, -20px -20px 60px #262b2f;
+  --wt-box-shadow-in: inset 8px 8px 16px #1c2023, inset -8px -8px 16px #262a2f;
 
 
   --wt-emphasis-color: var(--wt-color-a1);
@@ -110,6 +110,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  color: var(--wt-text-color);
+  background-color: var(--wt-body-bg1);
+
 }
 
 body{
@@ -132,12 +135,19 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+
 h1.light {
   color: var(--wt-text-color-light);
 }
 p.light{
   color: var(--wt-text-color-light);
 
+}
+
+strong{
+  color: var(--wt-color-a1);
+  font-weight: bold;
 }
 
 button {
@@ -199,7 +209,10 @@ button:hover {
 
 #app {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
+
 
 /* layout */
 

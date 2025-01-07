@@ -12,7 +12,7 @@ import Bottom from "./components/basic/Bottom.vue";
   <ThemeSwitch/>
   <top/>
 
-  <div class="m-1 p-0 w-820">
+  <div class="m-1 p-0 w-840">
     <div class="box-1 m-4 py-5">
       <Hello h1="欢迎来到木尾维修的杂物间" h2="木尾组件库" />
     </div>
@@ -39,15 +39,15 @@ import Bottom from "./components/basic/Bottom.vue";
 
   </div>
 
-
+<bottom/>
 </template>
 
 
 
 
 <style scoped>
-.w-820{
-  max-width: 820px;
+.w-840{
+  max-width: 840px;
   margin-left: auto;
   margin-right: auto;
   display: block;

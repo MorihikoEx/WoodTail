@@ -4,7 +4,7 @@
 
 <template>
   <header class="header" >
-      <h4 >WoodTail</h4>
+    <p class="header">&lt;<strong>WoodTail</strong>/&gt;</p>
   </header>
 </template>
 
@@ -15,11 +15,12 @@ header{
   align-items: center;
 }
 
-h4{
-  font-weight: bold;
+p.header{
+  font-weight: 1000;
   margin: 0;
   padding: 0;
   text-align: center;
+  text-shadow: 0 0 0.5em var(--wt-color-a1);
 }
 
 </style>
