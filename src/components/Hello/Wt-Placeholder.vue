@@ -26,6 +26,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 h1 {
+  color: var(--color-text-disabled);
   text-align: center;
 }
 </style>

@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import App from './WoodTail.vue'
+import App from './WoodTailApp.vue'
 
-import './WoodTailMain.css'
+import './WoodTailStyle.css'
 
 createApp(App).mount('#app')
