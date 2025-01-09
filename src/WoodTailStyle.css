@@ -109,8 +109,8 @@ body{
   color: var(--color-text-primary);
   background-color: var(--color-bg);
   height：100%;
-  margin: auto;
-  padding: 1em;
+  margin: 0;
+  padding: 0;
   flex:auto;
   justify-content: center;
   align-items: center;
@@ -253,6 +253,7 @@ input {
   padding: 1.5rem;
   border-radius: 1.5rem;
 }
+
 .box.bg{
   background-color: var(--color-bg);
 }
@@ -269,6 +270,7 @@ input {
 
 #body-box{
   margin: 0 auto;
+  padding: 1.5rem;
   max-width: 840px;
 }
 
@@ -296,7 +298,18 @@ input {
   justify-content: center;
 }
 
+@media (max-width: 540px) {
+  .box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
 
+  }
+  #body-box{
+    margin: 0;
+    padding: 0;
+  }
+}
 
 
 /* typography tools */
