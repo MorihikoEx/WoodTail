@@ -130,6 +130,10 @@ h1 {
   line-height: 1.1;
   cursor: default;
 }
+h2{
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
 h2,h3,h4,h5,h6 {
   color: var(--color-text-primary);
   cursor: default;
@@ -145,7 +149,8 @@ h2:active{
 }
 
 p{
-  margin: 0.6rem;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 button {
@@ -153,11 +158,14 @@ button {
   height: 2.6rem;
   width: 6rem;
   margin: 1rem;
-  color:var(--color-text-primary);
+  color:var(--color-text-title);
+  font-weight: 400;
+  font-size: 16px;
   box-shadow:  6px 6px 12px var(--color-shadow1),
   -6px -6px 12px var(--color-shadow2);
-  border-radius: 20px;
+  border-radius: 1.5rem;
   border: none;
+
 }
 button:hover {
   background-color: var(--color-bg-important);
@@ -274,7 +282,21 @@ input {
   max-width: 840px;
 }
 
+@media (max-width: 540px) {
+  .box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
 
+  }
+  #body-box{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/* typography tools */
 .flex-x {
   display: -webkit-flex;
   display: flex;
@@ -297,22 +319,6 @@ input {
 .flex-center {
   justify-content: center;
 }
-
-@media (max-width: 540px) {
-  .box {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 1rem;
-
-  }
-  #body-box{
-    margin: 0;
-    padding: 0;
-  }
-}
-
-
-/* typography tools */
 .m-0 {
   margin: 0;
 }
