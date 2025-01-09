@@ -13,7 +13,7 @@ import WtColorPalette from "./components/Hello/Wt-ColorPalette.vue";
 <wt-theme-switch/>
   <wt-header/>
   <div class="box" id="body-box" >
-    <hello h1="欢迎来到木尾维修的杂物间" h2="别不知足了，这可是全汉灼最好的装修方案！"/>
+    <hello/>
 
     <div class="flex-x ">
       <div class="box shadow flex-y ">
@@ -21,15 +21,21 @@ import WtColorPalette from "./components/Hello/Wt-ColorPalette.vue";
         <wt-label/>
         <wt-label/>
       </div>
-      <cyber-wooden-fish class="shadow" />
+      <cyber-wooden-fish class="box shadow" />
     </div>
-<wt-color-palette/>
 
-    <wt-placeholder class="shadow "/>
+    <wt-color-palette/>
+    <wt-placeholder class="box shadow "/>
     <div class="flex-x ">
-      <wt-placeholder class="shadow"/>
-      <wt-placeholder class="shadow-inset "/>
+      <wt-placeholder class="box shadow"/>
+      <wt-placeholder class="box shadow-inset "/>
     </div>
+    <div class="flex-x ">
+      <wt-placeholder class="box shadow"/>
+      <wt-placeholder class="box shadow"/>
+      <wt-placeholder class="box shadow shadow-inset "/>
+    </div>
+
 
 
   </div>
@@ -41,5 +47,4 @@ import WtColorPalette from "./components/Hello/Wt-ColorPalette.vue";
 
 
 <style scoped>
-
 </style>

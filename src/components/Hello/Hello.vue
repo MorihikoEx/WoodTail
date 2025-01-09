@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-defineProps<{h1: string ; h2: string }>()
+
 </script>
 
 <template>
@@ -12,8 +12,8 @@ defineProps<{h1: string ; h2: string }>()
       <img src=../../assets/icon/TheBook_256.svg class="logo" alt="TheBook logo" />
     </a>
   </div>
-  <h1>{{ h1 }}</h1>
-  <h2>{{ h2 }}</h2>
+  <h1>欢迎来到<span class="hello">木尾维修</span>的杂物间</h1>
+  <h2>" 别不知足了，这可是全汉灼最好的装修方案！"</h2>
   <p class="light">更简约，更温和，更方便</p>
   <p class="light">&gt;<a id="mental">以及绝美的精神状态</a>&lt;</p>
 </div>
@@ -21,6 +21,9 @@ defineProps<{h1: string ; h2: string }>()
 </template>
 
 <style scoped>
+.hello{
+  text-decoration: var(--color-c) wavy underline;
+}
 #mental {
   cursor: help;
 }

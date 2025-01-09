@@ -55,7 +55,10 @@
 
 .toggle-state:checked ~ .indicator {
   transform: translate3d(25%, 0, 0);
-  background-color: var(--color-bg-important);
+  background-color: var(--color-bg-minor);
+}
+.indicator:hover {
+  background-color: var(--color-bg-important)!important;
 }
 
 

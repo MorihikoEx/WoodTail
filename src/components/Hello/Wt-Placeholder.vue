@@ -19,7 +19,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="box flex-y">
+  <div class="flex-y">
     <h1 class="light">{{ containerSize.width }} * {{ containerSize.height }}</h1>
   </div>
 </template>

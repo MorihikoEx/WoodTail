@@ -26,37 +26,7 @@
   box-shadow: 4px 4px 10px var(--color-shadow1),
   -4px -4px 10px var(--color-shadow2);
 }
-.palette.color-light{
-  background-color: var(--color-light);
-}
-.palette.color-dark{
-  background-color: var(--color-dark);
-}
-.palette.color-a{
-  background-color: var(--color-a);
-}
-.palette.color-b{
-  background-color: var(--color-b);
-}
-.palette.color-c{
-  background-color: var(--color-c);
-}
 
-.palette.color-light:hover{
-  background-color: var(--color-light-hover);
-}
-.palette.color-dark:hover{
-  background-color: var(--color-dark-hover);
-}
-.palette.color-a:hover{
-  background-color: var(--color-a-hover);
-}
-.palette.color-b:hover{
-  background-color: var(--color-b-hover);
-}
-.palette.color-c:hover{
-  background-color: var(--color-c-hover);
-}
 
 
 </style>
