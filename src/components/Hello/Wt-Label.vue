@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <label class="label">
+  <label class="label toggle my-3" >
     <div class="toggle">
       <input class="toggle-state" type="checkbox" name="check" value="check">
       <div class="indicator"></div>
@@ -28,7 +28,7 @@
   position: relative;
   height: 2rem;
   width: 4rem;
-  border-radius: 12px;
+  border-radius: 1rem;
   overflow: hidden;
   background-color: var(--color-bg);
   box-shadow: -8px -4px 8px 0px var(--color-shadow2),
@@ -46,7 +46,7 @@
   height: 100%;
   width: 200%;
   background: var(--color-bg);
-  border-radius: 12px;
+  border-radius: 1rem;
   transform: translate3d(-75%, 0, 0);
   transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
   box-shadow: -8px -4px 8px 0px var(--color-shadow2),
@@ -55,10 +55,9 @@
 
 .toggle-state:checked ~ .indicator {
   transform: translate3d(25%, 0, 0);
+  background-color: var(--color-bg-important);
 }
-.toggle-state:checked ~ .toggle {
-  background-color: var(--color-b);
-}
+
 
 
 
