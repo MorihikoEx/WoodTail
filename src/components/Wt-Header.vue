@@ -25,7 +25,7 @@ onMounted(() => {
   <header>
     <h1 @click="toggleNav" :class="{ 'centered': !isNavVisible }">&lt;<strong id="wt-header">WoodTail</strong>/&gt;</h1>
     <nav v-if="isNavVisible">
-        <ul class="shadow-inset">
+        <ul>
           <li><a href="#">苍离</a></li>
           <li><a href="#">凛墨</a></li>
           <li><a href="#">赤屿</a></li>
@@ -49,6 +49,9 @@ header ul{
   margin: 0rem;
   padding: 0 0.7rem;
   flex-wrap: nowrap;
+  border-radius: 1.5rem;
+  box-shadow: inset 8px 8px 16px var(--color-shadow1),
+  inset -8px -8px 16px var(--color-shadow2);
 }
 header li {
   display: inline-block;
